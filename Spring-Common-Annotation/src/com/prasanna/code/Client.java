@@ -9,6 +9,7 @@ public class Client {
 		ApplicationContext context = new AnnotationConfigApplicationContext(CollageConfig.class);
 		Collage collage = context.getBean("collageBean" , Collage.class);
 		System.out.println("The collage object created by spring is : "+collage);
+		collage.test();
 
 	}
 
